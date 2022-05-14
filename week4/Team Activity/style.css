@@ -1,0 +1,27 @@
+.board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+  }
+  
+  .board > div {
+    border: 1px solid;
+    font-size: 5em;
+    text-align: center;
+  }
+  
+  .board > div:nth-child(3n) {
+    border-right: 0;
+  }
+  
+  .board > div:nth-child(1n) {
+    border-left: 0;
+  }
+  
+  .board > div:nth-child(n + 1) {
+    border-bottom: 0;
+  }
+  
+  .board > div:nth-child(-n + 3) {
+    border-top: 0;
+  }
