@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(50, 50, 128);
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    padding: 5em;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0%;
+    margin: 0;
+}
+
+li {
+    padding: 0em;
+    border-bottom: 0px;
+    background-color: rgb(196, 225, 217);
+    font-size: 80%;
+    color: rgb(44, 90, 83);
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2em 0em;
+    align-items: center;
+}
+
+li button {
+    padding: 0.8em 0.8em;
+    font-size: 90%;
+    border: 1px rgb(89, 144, 129);
+}
+
+.filters {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between
+}
+
+.filters button {
+    padding: 0.6em 1em;
+    border: 1px rgb(89, 144, 129);
+}
+
+form {
+    margin: 2em 0em 0em 0em;
+}
+
+button {
+    color:rgb(89, 144, 129)
+}
