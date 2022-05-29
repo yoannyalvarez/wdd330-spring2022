@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Todos</h1>
+        <div class="list">
+            <ul id="ulList">
+
+            </ul>
+            <div class="foot">
+                <span id="numberOfTaks"></span>
+                <div class="filters">
+                    <button type="button" id="all">All</button>
+                    <button type="button" id="active">Active</button>
+                    <button type="button" id="completed">Completed</button>
+                </div>
+            </div>
+            <form>
+                <input type="text" id="newTask" placeholder="Enter your task">
+                <button type="button" id="addTask">+</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
