@@ -1,4 +1,4 @@
-import { createHTMLElement, addToLS, getFromLS, removeFromLS } from "/utils.js"; 
+import { createHTMLElement, addToLS, getFromLS, removeFromLS } from "./utils.js"; 
 
 let listNode = document.getElementById("ulList");
 

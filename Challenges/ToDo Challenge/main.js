@@ -1,3 +1,3 @@
-import renderList from "/ToDos.js"; 
+import renderList from "./ToDos.js"; 
 
 window.onload = renderList();
