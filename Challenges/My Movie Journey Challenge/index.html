@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Journey App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button type="button" id="goToSearchButton" class="iconButton" title="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </button>
+        <button type="button" id="showFavsButton" class="iconButton" title="Favorites List">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+        </button>
+    </header>
+
+    <main id="movies">
+        <div class="startSection" id="startSection">
+            <div class="header">
+                <p class="upDescription">My Movie Journey App</p>
+                <h1>What movie are you looking for today?</h1>
+            </div>
+            <div class="body">
+                <p class="paragraph">My Movie Journey App is for those who love cinema. Letting you to discover new movies, know a little bit more about your favorite ones, helping you to keep track of those who you loved or would love to see, and keep you update about the work or your favorite artists. All in one step. Would you like to try it?</p>
+            </div>
+            <div class="button">
+                <button type="button" id="startButton" class="actionButton">Let's start</button>
+            </div>
+        </div>
+
+        <div class="searchSection hidden" id="searchSection">
+            <div class="header">
+                <p class="upDescription">My Movie Journey App</p>
+                <h1>What movie are you looking for today?</h1>
+                <p class="paragraph">Alright! All you need to do is to enter a word that is included in the title of your movie and let the magic happen. Good luck!</p>
+            </div>
+        
+            <div class="body">
+                <form id="form" novalidate>
+                        <label for="title" aria-placeholder="movie title input">Movie title *
+                            <input type="text" id="title" placeholder="Enter movie title..." required>
+                            <span class="error" aria-live="polite"></span>
+                        </label>
+                
+                        <label for="year" aria-placeholder="movie year input">Movie year
+                            <input type="text" id="year" placeholder="Enter movie year..." pattern="\d{4}">
+                            <span class="error" aria-live="polite"></span>
+                        </label>
+                
+                        <label for="type" aria-placeholder="type input">Type of content
+                            <select name="Type of Content" id="type">
+                                <option value="">Select a type...</option>
+                                <option value="movie">Movie</option>
+                                <option value="series">Series</option>
+                                <option value="game">Game</option>
+                                <option value="episode">Episode</option>
+                            </select>
+                        </label>
+
+                        <button type="button" id="searchBtn" class="actionButton">Search</button>          
+                </form>
+            </div>
+
+        </div>
+
+        <div class="list hidden" id="list"></div>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
