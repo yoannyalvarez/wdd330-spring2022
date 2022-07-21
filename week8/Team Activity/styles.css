@@ -1,0 +1,11 @@
+.person {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    
+    font-size: 90%;
+    font-family: Tahoma, sans-serif;
+}
+
+.person div {
+    padding: 0.8em;
+}

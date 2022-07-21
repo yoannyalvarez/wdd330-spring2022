@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    margin: auto;
+    place-content: center;
+}
+
+main {
+    background-color: rgb(202, 226, 180);
+    padding: 5em;
+    border: 0.5px solid gray;
+    font-family: verdana;
+}
+
+h1 {
+    margin-bottom: 2em;
+}
+
+#quakeList {
+    font-size: 80%;
+}
+
+li {
+    list-style: decimal;
+    padding-left: 1em;
+}
